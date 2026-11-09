@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monitoring &mdash; Wilfried Thuiller</title>
+<meta name="description" content="ORCHAMP — a mountain biodiversity observatory combining eDNA, camera-traps, acoustic sensors, ontologies and data cubes. Wilfried Thuiller, CNRS, LECA.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="index.html">Wilfried Thuiller<span class="role">CNRS &middot; LECA</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation"><span></span></button>
+    <nav class="site-nav" id="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="People.html">People</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Publications.html">Publications</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="Monitoring.html" aria-current="page">Monitoring</a></li>
+        <li><a href="Software.html">Software</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+    <div class="page-header-inner wide cv-header-flex">
+      <div class="cv-header-text">
+        <p class="eyebrow">Monitoring</p>
+        <h1 class="page-title">ORCHAMP</h1>
+        <p class="page-lede">A long-term observation network monitoring biodiversity and ecosystem functioning
+          across space and time in the French Alps, Corsica and Pyrenees &mdash; from soil DNA to bird calls, mapped onto
+          the same elevation gradients since 2016.</p>
+      </div>
+      <a class="page-header-logo" href="https://orchamp.osug.fr" target="_blank" rel="noopener">
+        <img src="assets/img/orchamp-logo.png" alt="ORCHAMP logo">
+      </a>
+    </div>
+  </div>
+
+  <section class="content">
+    <div class="content-inner wide">
+
+      <div class="cv-stats">
+        <div class="stat-tile"><span class="n">2016</span><span class="l">launched</span></div>
+        <div class="stat-tile"><span class="n" data-orchamp-stat="gradients">58</span><span class="l">elevation gradients<br>Alps, Corsica  &amp; Pyrenees</span></div>
+        <div class="stat-tile"><span class="n" data-orchamp-stat="plots">~290</span><span class="l">permanent plots<br>(~5 per gradient, on average)</span></div>
+      </div>
+      <p style="font-size:12px;color:var(--text-muted);margin:-40px 0 40px;">Figures fetched live from <a href="https://orchamp.osug.fr" target="_blank" rel="noopener">orchamp.osug.fr</a> (plot count estimated from the gradient count).</p>
+
+      <div class="prose">
+        <p>Most biodiversity monitoring targets a single taxon &mdash; birds, plants &mdash; because building a
+          holistic view is hard. ORCHAMP takes the harder route: along replicated elevation gradients, it tracks
+          the same 30&times;30&nbsp;m permanent plots from soil microbes to large mammals, combining traditional
+          field survey with environmental DNA, camera-traps and acoustic sensors. Elevation gradients make good
+          sentinels &mdash; a shift we would only see in 50&ndash;70 years at a fixed point already shows up over
+          a couple hundred metres of altitude today.</p>
+        <p>Plots are spaced roughly 200&nbsp;m apart in elevation, four to nine per gradient, resurveyed on a
+          rotating schedule averaging every 4&ndash;5 years. Started with five gradients in the French Alps in
+          2016, the network expanded into the Pyrenees in 2021, Corsica in 2023, Stelvio and Swiss National Park in 2025, and keeps growing.</p>
+      </div>
+
+      <div class="figure-panel">
+        <img src="assets/img/orchamp-monitoring-scheme.png" alt="ORCHAMP monitoring scheme: forest, flora, fauna, soil and climate compartments sampled on each permanent plot">
+        <p class="caption"><strong>Monitoring scheme.</strong> Each permanent plot is surveyed for forest structure,
+          flora, fauna, soil and climate together &mdash; not as separate programmes. Source: Thuiller et al.
+          2024, <em>Comptes Rendus Biologies</em>.</p>
+      </div>
+
+      <div class="section-divider"><h2>Multi-modal monitoring</h2></div>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-eyebrow">Above ground</div>
+          <h3>Vegetation &amp; forest</h3>
+          <p>Presence-absence plant surveys and pin-point transects along a standardised band, plus a full
+            forest protocol: live and dead tree inventories, deadwood decay stage, and 47 types of tree-related
+            microhabitats.</p>
+        </div>
+        <div class="card">
+          <div class="card-eyebrow">Below ground</div>
+          <h3>Environmental DNA</h3>
+          <p>Soil biodiversity is characterised through eDNA metabarcoding using six markers &mdash; two
+            universal (eukaryotes, bacteria) and four clade-specific (fungi, insects, oligochaetes, Collembola)
+            &mdash; at a taxonomic resolution no manual survey can match.</p>
+        </div>
+        <div class="card">
+          <div class="card-eyebrow">Large mammals</div>
+          <h3>Camera-traps</h3>
+          <p>Two camera-traps per plot track large mammals. Images run through a two-step AI pipeline &mdash;
+            MegaDetector isolates animals, DeepFaune classifies the species &mdash; with low-confidence
+            detections reviewed by staff and citizen scientists.</p>
+        </div>
+        <div class="card">
+          <div class="card-eyebrow">Soniferous species</div>
+          <h3>Passive acoustic monitoring</h3>
+          <p>Autonomous recorders capture one minute of audio every 15 minutes through the summer, producing
+            acoustic indices and, increasingly, unsupervised acoustic OTUs &mdash; tracking birds, mammals and
+            other calling animals without a species-by-species model.</p>
+        </div>
+        <div class="card">
+          <div class="card-eyebrow">Soil</div>
+          <h3>Soil pits &amp; physico-chemistry</h3>
+          <p>Every plot has a dedicated soil pit: conventional analyses, organic matter characterisation
+            (infrared spectroscopy, Rock-Eval pyrolysis) and mineral geochemistry (XRF), placing each plot within
+            standard soil reference systems.</p>
+        </div>
+        <div class="card">
+          <div class="card-eyebrow">Climate &amp; remote sensing</div>
+          <h3>Microclimate &amp; satellite time series</h3>
+          <p>Hourly soil temperature and moisture loggers on every plot, combined with Sentinel-2 and Landsat
+            time series (NDVI trends back to 1984) and climate reanalysis data, to separate microclimate from
+            regional climate.</p>
+        </div>
+      </div>
+
+      <div class="section-divider"><h2>From sensors to knowledge</h2></div>
+      <div class="prose">
+        <p>Every raw measurement and its metadata are collected and stored through a relational database
+          developed at LECA, following FAIR principles (Findable, Accessible, Interoperable, Reusable). Large or
+          specific datasets &mdash; eDNA, acoustic, camera &mdash; are held on their own dedicated storage.
+          Processed data cubes and common indices are published for each plot and protocol through a public
+          R-Shiny application, so anyone can query and download what they need without going through the raw
+          files.</p>
+        <p>Soil biodiversity poses a particular challenge: eDNA returns thousands of taxonomically uneven
+          sequences with no shared vocabulary to compare across studies. To make that data usable, the team built
+          the <strong>Soil Food Web Ontology (SFWO)</strong> &mdash; formal, logical definitions for more than 160
+          trophic groups spanning soil taxa &mdash; and an ontology-based integration pipeline that assembles a
+          knowledge graph linking trophic interactions and feeding habits across a dozen external data sources.
+          Because the integrated data are "semantified" (tied to SFWO concepts), the pipeline can automatically
+          reconstruct informative metawebs &mdash; food webs for a given plot or community &mdash; and reason over
+          them, rather than requiring a human to hand-curate every interaction.</p>
+      </div>
+
+      <div class="figure-panel">
+        <img src="assets/img/orchamp-data-integration.png" alt="ORCHAMP data flow: environmental and biodiversity sensors feed data cubes, which feed predictive models, metawebs, a tropho-functional knowledge graph and the Soil Food Web Ontology">
+        <p class="caption"><strong>Data integration and flow of information.</strong> Environmental features (a)
+          and multi-taxa biodiversity data &mdash; eDNA (b), vegetation and forest survey (c), camera-traps (d),
+          acoustic sensors (e) &mdash; are organised into data cubes, used for predictive models and attribution
+          analyses, and, for soil data, run through semantic integration against the Soil Food Web Ontology to
+          build tropho-functional knowledge graphs and metawebs. Source: Thuiller et al. 2024,
+          <em>Comptes Rendus Biologies</em>.</p>
+      </div>
+
+      <div class="cta-box">
+        <div class="cta-text">
+          <h3>Explore the data</h3>
+          <p>Browse ORCHAMP's plots, protocols and results, and query the data cubes directly from the
+            programme's own website.</p>
+        </div>
+        <a class="btn" href="https://orchamp.osug.fr" target="_blank" rel="noopener">Visit orchamp.osug.fr &rarr;</a>
+      </div>
+
+      <div class="prose">
+        <p style="font-size:13.5px;color:var(--text-muted);">Full methodological details, the complete ORCHAMP
+          consortium and funding are in Thuiller, W., Saillard, A. et al. (2024) <em>ORCHAMP: an observation
+          network for monitoring biodiversity and ecosystem functioning across space and time in mountainous
+          regions.</em> Comptes Rendus Biologies, 347(4), 223&ndash;247 &mdash; see the
+          <a href="Publications.html">Publications</a> page for the full reference.</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <span>&copy; Wilfried Thuiller &mdash; Laboratoire d'Ecologie Alpine, UMR CNRS-UGA-USMB 5553</span>
+  </div>
+</footer>
+
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/orchamp-stats.js"></script>
+</body>
+</html>

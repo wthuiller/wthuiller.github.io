@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software &mdash; Wilfried Thuiller</title>
+<meta name="description" content="biomod2 and FATE-HD — open-source R platforms for species distribution and vegetation dynamics modelling.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="index.html">Wilfried Thuiller<span class="role">CNRS &middot; LECA</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation"><span></span></button>
+    <nav class="site-nav" id="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="People.html">People</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Publications.html">Publications</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="Monitoring.html">Monitoring</a></li>
+        <li><a href="Software.html" aria-current="page">Software</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+    <div class="page-header-inner wide cv-header-flex">
+      <div class="cv-header-text">
+        <p class="eyebrow">Software</p>
+        <h1 class="page-title">Open-source platforms</h1>
+        <p class="page-lede">Two R platforms developed and maintained in the group, used across the lab's own
+          research and by the wider community. Stats below are pulled live from GitHub.</p>
+      </div>
+      <div class="cv-header-photo cv-header-photo--xwide cv-header-photo--diagram">
+        <button type="button" class="lightbox-trigger" data-full-src="assets/img/biomod2-workflow-full.png">
+          <img src="assets/img/biomod2-workflow.png" alt="Diagram of the biomod2 workflow: data formatting, single models, ensemble models, and output &amp; plot functions">
+        </button>
+        <p class="cv-header-photo-credit">biomod2 workflow &amp; functions</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="content">
+    <div class="content-inner wide">
+
+      <div class="platform-grid">
+
+        <div class="platform-card" data-gh-repo="biomodhub/biomod2">
+          <div class="platform-header">
+            <div>
+              <p class="platform-kicker">R package &middot; species distribution modelling</p>
+              <h2>biomod2</h2>
+              <p class="tagline">Ensemble species distribution modelling</p>
+            </div>
+            <img class="platform-logo" src="assets/img/biomod2-hex.png" alt="biomod2 hex sticker logo">
+          </div>
+          <p class="description">biomod2 is an R platform for ensemble forecasting of species distributions.
+            It combines a wide range of modelling algorithms &mdash; from GLMs to random forests and neural
+            networks &mdash; so that methodological uncertainty can be tested and combined rather than
+            hidden, and projects species' potential distributions under current or future environmental
+            conditions. It now also handles abundance, count and ordinal data, beyond presence-absence.</p>
+
+          <div class="gh-stats">
+            <div class="stat"><span class="label">Stars</span><span class="value" data-gh-stars></span></div>
+            <div class="stat"><span class="label">Latest release</span><span class="value"><a data-gh-release href="https://github.com/biomodhub/biomod2/releases"></a></span></div>
+            <div class="stat"><span class="label">Released</span><span class="value" data-gh-release-date></span></div>
+            <div class="stat"><span class="label">Last commit</span><span class="value" data-gh-updated></span></div>
+            <div class="stat"><span class="label">Open issues</span><span class="value" data-gh-issues></span></div>
+          </div>
+
+          <p style="margin:0;"><strong>Install from R</strong></p>
+          <pre class="code-block"><code>library(devtools)
+devtools::install_github("biomodhub/biomod2", dependencies = TRUE)</code></pre>
+
+          <div class="platform-links">
+            <a href="https://biomodhub.github.io/biomod2/" target="_blank" rel="noopener">Documentation</a>
+            <a href="https://github.com/biomodhub/biomod2" target="_blank" rel="noopener">GitHub repository</a>
+          </div>
+        </div>
+
+        <div class="platform-card" data-gh-repo="leca-dev/RFate">
+          <p class="platform-kicker">R package &middot; vegetation dynamics modelling</p>
+          <h2>FATE&ndash;HD <span style="font-size:15px;color:var(--text-muted);font-family:var(--font-body);">(RFate)</span></h2>
+          <p class="tagline">Spatially explicit vegetation dynamics</p>
+          <p class="description">FATE is a spatially and temporally explicit vegetation model built around
+            plant functional groups. It simulates demographic cycles, seed dispersal, light and soil
+            competition, and disturbance regimes (grazing, mowing, fire, drought) to project vegetation
+            dynamics and diversity across landscapes and through time. The RFate package covers the full
+            workflow, from parameterisation to simulation and analysis.</p>
+
+          <div class="gh-stats">
+            <div class="stat"><span class="label">Stars</span><span class="value" data-gh-stars></span></div>
+            <div class="stat"><span class="label">Latest release</span><span class="value"><a data-gh-release href="https://github.com/leca-dev/RFate/releases"></a></span></div>
+            <div class="stat"><span class="label">Released</span><span class="value" data-gh-release-date></span></div>
+            <div class="stat"><span class="label">Last commit</span><span class="value" data-gh-updated></span></div>
+            <div class="stat"><span class="label">Open issues</span><span class="value" data-gh-issues></span></div>
+          </div>
+
+          <p style="margin:0;"><strong>Install from R</strong></p>
+          <pre class="code-block"><code>library(devtools)
+devtools::install_github(repo = "leca-dev/RFate")</code></pre>
+
+          <div class="platform-links">
+            <a href="https://leca-dev.github.io/RFate/" target="_blank" rel="noopener">Documentation</a>
+            <a href="https://github.com/leca-dev/RFate" target="_blank" rel="noopener">GitHub repository</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pub-highlight">
+        <span class="h-label">Latest biomod2 publication</span>
+        Guéguen, M., Blancheteau, H., Lemaire-Patin, R. &amp; Thuiller, W. <em>biomod2 &mdash; extending
+        presence-absence species distribution models to multiple data types.</em> Ecography, in press.
+        See the <a href="Publications.html#in-press">Publications page</a> for the full reference.
+      </div>
+
+      
+      
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <span>&copy; Wilfried Thuiller &mdash; Laboratoire d'Ecologie Alpine, UMR CNRS-UGA-USMB 5553</span>
+  </div>
+</footer>
+
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/github-stats.js"></script>
+<script src="assets/js/lightbox.js"></script>
+</body>
+</html>

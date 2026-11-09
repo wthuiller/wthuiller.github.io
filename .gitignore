@@ -1,0 +1,5 @@
+# Fichiers de sauvegarde et fichiers système à ne pas mettre en ligne
+*~
+*.bak
+.DS_Store
+.claude/
