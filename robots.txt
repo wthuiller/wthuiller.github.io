@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wthuiller.github.io/sitemap.xml
